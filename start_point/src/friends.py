@@ -44,3 +44,10 @@ def find_no_friends(people):
             no_pals.append(person)
     return no_pals
 
+def unique_favourite_tv_shows(people):
+    tv_shows = []
+    for person in people:
+        tv_shows.append(person["favourites"]["tv_show"])
+
+    return list(dict.fromkeys(tv_shows))
+
