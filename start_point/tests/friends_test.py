@@ -133,7 +133,7 @@ class TestFriends(unittest.TestCase):
 
   # 9. Find people with no friends
   # (hint: return an list, there might be more people in the future with no friends!)
-  @unittest.skip("delete this line to run the test")
+  # @unittest.skip("delete this line to run the test")
   def test_find_no_friends(self):
     self.assertEqual([self.person5], find_no_friends(self.people))
 
