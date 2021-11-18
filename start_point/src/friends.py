@@ -28,3 +28,12 @@ def lend_money(lender, lendee, loan):
     lender["monies"] -= loan
     lendee["monies"] += loan
 
+def all_favourite_foods (people):
+    foods = []
+    for person in people:
+        i = 0
+        while i < len(person["favourites"]["snacks"]):
+            foods.append(person["favourites"]["snacks"][i])
+            i += 1
+    return foods
+

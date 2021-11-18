@@ -115,7 +115,7 @@ class TestFriends(unittest.TestCase):
 
   # 7. For two given people, allow the first person to loan a given value of money to the other
   # (hint: our function will probably need 3 arguments passed to it... the lender, the lendee, and the amount for this function)
-  @unittest.skip("delete this line to run the test")
+  # @unittest.skip("delete this line to run the test")
   def test_lend_money(self):
     lend_money(self.person2, self.person1, 2)
     self.assertEqual(0, self.person2["monies"])
@@ -124,7 +124,7 @@ class TestFriends(unittest.TestCase):
 
   # 8. Find the set of everyone's favourite food joined together
   # (hint: concatenate the favourites/snack arrays together)
-  @unittest.skip("delete this line to run the test")
+  # @unittest.skip("delete this line to run the test")
   def test_favourite_foods(self):
     result = all_favourite_foods(self.people)
     expected = ["charcuterie", "soup", "bread", "Scooby snacks", "spaghetti", "ratatouille", "spinach"]
