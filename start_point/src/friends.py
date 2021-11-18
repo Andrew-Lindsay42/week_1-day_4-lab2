@@ -49,5 +49,7 @@ def unique_favourite_tv_shows(people):
     for person in people:
         tv_shows.append(person["favourites"]["tv_show"])
 
-    return list(dict.fromkeys(tv_shows))
+    # return list(dict.fromkeys(tv_shows))
+
+    return set(tv_shows)
 
